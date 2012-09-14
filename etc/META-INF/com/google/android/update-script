@@ -1,7 +1,7 @@
 assert compatible_with("0.1") == "true"
-assert file_contains("SYSTEM:build.prop", "ro.product.device=LGLS840") == "true" || file_contains("SYSTEM:build.prop", "ro.build.product=LGLS840") == "true"
-assert file_contains("RECOVERY:default.prop", "ro.product.device=LGLS840") == "true" || file_contains("RECOVERY:default.prop", "ro.build.product=LGLS840") == "true"
-assert getprop("ro.product.device") == "LGLS840"
+assert file_contains("SYSTEM:build.prop", "ro.product.device=ls840") == "true" || file_contains("SYSTEM:build.prop", "ro.build.product=ls840") == "true"
+assert file_contains("RECOVERY:default.prop", "ro.product.device=ls840") == "true" || file_contains("RECOVERY:default.prop", "ro.build.product=ls840") == "true"
+assert getprop("ro.product.device") == "ls840"
 format BOOT:
 format SYSTEM:
 copy_dir PACKAGE:system SYSTEM:
